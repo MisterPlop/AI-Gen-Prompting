@@ -43,7 +43,7 @@ Main dependencies:
 - xgboost
 - flask
 - streamlit
-- joblib
+- pickle
 
 Full list in `requirements.txt`
 
