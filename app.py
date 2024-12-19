@@ -1,10 +1,10 @@
 ## Prompt : 
 # Create an API, using FLASK to predict avocado prices.
-# Use the exported regression model 'avocado_pipeline.pkl' with joblib.
+# Use the exported regression model 'avocado_pipeline.pkl' with pickle
 # Dynamically handle one-hot encoded categorical features to ensure flexible predictions.
-# Import the pipeline using joblib
+# Import the pipeline using pickle
 # Preprocess input data matching the original model's training
-# Dynamically generate one-hot encoded columns for 'type' and 'region'
+# Dynamically generate one-hot encoded columns for 'type' and 'region'.
 # Create a robust prediction endpoint that handles various input scenarios
 # Model Context:
 # - Predicts average avocado prices using multiple features
@@ -31,7 +31,7 @@
 
 # Recommended Imports:
 # - flask
-# - joblib
+# - pickle
 # - pandas
 # - numpy
 # - sklearn metrics
@@ -45,13 +45,14 @@ from flask import Flask, request, jsonify
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
-import joblib
+import pickle
 
 app = Flask(__name__)
 
 # Load the saved pipeline
 try:
-    pipeline = joblib.load('avocado_price_predictor.pkl')
+    with open('avocado_price_predictor.pkl', 'rb') as file:
+        pipeline = pickle.load(file)
 except FileNotFoundError:
     raise FileNotFoundError("Model file 'avocado_price_predictor.pkl' not found. Ensure the model file is in the correct location.")
 
