@@ -8,12 +8,9 @@ This project predicts avocado prices using machine learning. It consists of thre
 ## 📊 Project Structure
 ```
 .
-├── model/
-│   └── model_training.ipynb
-├── api/
-│   └── app.py
-├── frontend/
-│   └── streamlit_app.py
+├── model_training.ipynb
+├── app.py
+├── frontend.py
 ├── avocado_price_predictor.pkl
 ├── requirements.txt
 └── README.md
@@ -62,7 +59,6 @@ jupyter notebook model/model_training.ipynb
 
 ### 2. Start Flask Backend
 ```bash
-cd api
 python app.py
 ```
 - Runs on `http://localhost:5000`
@@ -70,8 +66,7 @@ python app.py
 
 ### 3. Launch Streamlit Frontend
 ```bash
-cd frontend
-streamlit run streamlit_app.py
+streamlit run frontend.py
 ```
 - Opens automatically in browser
 - Usually on `http://localhost:8501`
