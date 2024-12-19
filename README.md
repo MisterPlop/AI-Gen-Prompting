@@ -122,4 +122,4 @@ To contribute:
 MIT License
 
 ---
-Created with 🥑 by [Your Name]
+Created with 🥑 by Claude & Alan (Yours to guess who's the AI assistant!)
