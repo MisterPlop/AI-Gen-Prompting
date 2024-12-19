@@ -51,7 +51,7 @@ Full list in `requirements.txt`
 
 ### 1. Model Training (Optional - PKL file provided)
 ```bash
-jupyter notebook model/model_training.ipynb
+jupyter notebook model_training.ipynb
 ```
 - Opens notebook for model training
 - Uses `avocado.csv` dataset
