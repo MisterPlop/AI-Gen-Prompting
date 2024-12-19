@@ -1,3 +1,25 @@
+## Prompt : 
+#Create a front-end, using streamlit take in account these details 
+#It is a front-end for an avocado price prediction
+#Communicate with the backend on http://localhost:5000/avocado/predict
+#a sample body of the POST query is : 
+#{
+#    "Quality1": 1036.74,
+#    "Quality2": 54454.85,
+#    "Quality3": 48.16,
+#    "Small Bags": 8603.62,
+#    "Large Bags": 93.25,
+#    "XLarge Bags": 0.0,
+#    "year": 2015,
+#    "type": "conventional",
+#    "region": "Albany"
+#}
+#Make it on one page only
+#Create all fields necessary for each required feature
+#Make a button "Predict price" and the predicted price on its side, in dollars
+#Handle tooltips by leaving an example behind each field
+#Use cool placeholders including avocados (image, text, whatever you want)
+
 import streamlit as st
 import requests
 import json
