@@ -9,7 +9,7 @@ This project predicts avocado prices using machine learning. It consists of thre
 ```
 .
 ├── model_training.ipynb
-├── app.py
+├── backend.py
 ├── frontend.py
 ├── avocado_price_predictor.pkl
 ├── requirements.txt
@@ -59,7 +59,7 @@ jupyter notebook model_training.ipynb
 
 ### 2. Start Flask Backend
 ```bash
-python app.py
+python backend.py
 ```
 - Runs on `http://localhost:5000`
 - Endpoint: `/avocado/predict` (POST)
